@@ -1844,6 +1844,9 @@
         --tw-ring-color: color-mix(in oklab, var(--color-gray-900) 10%, transparent);
       }
     }
+    :is(.sm\:\*\:text-\[18px\] > *) {
+      font-size: 18px;
+    }
   }
   @media (width >= 64rem) {
     .lg\:-m-4 {
