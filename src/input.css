@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@plugin "daisyui";
+
+@font-face {
+  font-family: 'Chronicle Display';
+  src: url('/fonts/chronicle-display.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-chronicle: "Chronicle Display", serif;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-gilroy: "Gilroy", sans-serif;
+}
