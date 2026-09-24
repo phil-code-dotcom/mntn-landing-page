@@ -7,10 +7,16 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="" style="background-image: url(./img/BG\ Hero.png);">
-        <header class="absolute inset-x-0 top-0 z-50 py-4 lg:py-5">
-            <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
+<body class="relative">
+    <div class="relative h-[600px] sm:h-[850px] lg:h-[1100px] xl:h-[1422px] overflow-hidden"
+        style="background-color: #0B1D2600;">
+        <!-- All three layers fill the container identically -->
+        <img src="./img/BG Hero.png" alt="" class="absolute inset-x-0 w-full h-full object-cover -z-30">
+        <img src="./img/MG.png" alt="" class="absolute inset-x-0 w-full -z-20 top-66 xl:top-75">
+        <img src="./img/VG.png" alt="" class="absolute inset-x-0 w-full -z-10 top-100 xl:top-150">
+
+        <header class="absolute inset-x-0 top-0 z-50 py-4 lg:py-11">
+            <nav class="max-w-[1920px] w-full mx-auto flex items-center justify-between px-6 lg:px-17">
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Your Company</span>
@@ -72,29 +78,34 @@
             </div> -->
         </header>
 
-        <div class="relative isolate overflow-hidden pt-12 lg:pt-16">
+        <div class="relative isolate overflow-hidden xl:pt-16">
             <div aria-hidden="true"
                 class="absolute -top-[40rem] left-1/2 -z-10 h-[80rem] w-[80rem] -translate-x-1/2 rounded-full bg-hero-grid bg-[length:70px_70px] mask-image-radial-gradient">
             </div>
-            <div class="mx-auto max-w-[950px] px-6 lg:px-8">
-                <div class="py-24 sm:py-32 lg:pb-0 max-w-[600px] mx-auto">
+            <div class="mx-auto w-fit max-w-[950px] px-6 lg:px-8">
+                <div class="py-24 lg:py-32 lg:pb-0 max-w-[950px] mx-auto">
                     <div class="flex items-center gap-3 justify-start">
                         <img src="./img/Rectangle 2.1.svg" alt="" class="">
-                        <p class="font-gilroy font-extrabold sm:text-[18px] text-[12px] text-[#FBD784] tracking-[6px]">A HIKING GUIDE</p>
+                        <p class="font-gilroy font-extrabold sm:text-[18px] text-[12px] text-[#FBD784] tracking-[6px]">A
+                            HIKING GUIDE</p>
                     </div>
-                    <h1 class="text-pretty text-left sm:text-6xl text-3xl font-chronicle tracking-tight text-white ">
-                        Be prepared for the Mountains and beyond!
+                    <h1
+                        class="text-pretty text-left sm:text-7xl text-3xl font-chronicle tracking-tight text-white max-w-[600px] lg:max-w-full">
+                        Be prepared for the <br>Mountains and Beyond!
                     </h1>
                 </div>
             </div>
         </div>
-        <div class="min-h-screen" style="background-image: url(./img/MG.png);">
+        <!-- <img src="./img/MG.png" alt="" class="w-full h-[1422px] absolute inset-x-0">
+        <img src="./img/VG.png" alt="" class="w-full absolute inset-x-0"> -->
 
-        </div>
-        <div class="min-h-screen" style="background-image: url(./img/VG.png);">
 
-        </div>
+
     </div>
+
+    <section class="absolute inset-x-0 top-200 w-full">
+        <img src="./img/BG Content.png" alt="" class="w-full">
+    </section>
 </body>
 
 </html>
